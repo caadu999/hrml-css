@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu teste</title>
+    <style>
+
+        body {
+            background-color: rgb(255, 255, 255);
+
+            
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+          height: 100vh;
+        }
+
+        .container {
+            background-color: rgb(27, 27, 27);
+            height: 600px;
+            width: 600px;
+            border-radius: 20px;
+            align-items: center;
+            display: flex;
+        }
+
+div.conteudo-left {
+    background-color: rgb(99, 0, 0);
+    background-image: url(imagens/wallpaper002.jpg);
+    background-size: cover;
+
+    border-radius: 20px;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+div.conteudo-left:hover {
+    transform: rotate(10deg) scale(120%);
+}
+
+
+
+div.conteudo-right {
+    border-radius: 20px;
+    background: white;
+    height: 400px;
+    margin: 10px;
+    width: 300px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="conteudo-left">
+            
+        </div>
+        <div class="conteudo-right">
+            <h1>teste</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam quibusdam, iusto blanditiis ea quo in quis animi explicabo sint modi ad nemo vitae laborum aut impedit cupiditate maiores commodi.</p>
+        </div>
+    </div>
+</body>
+</html>
