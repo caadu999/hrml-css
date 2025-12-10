@@ -9,6 +9,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        tbody > tr:nth-child(2n) {
+            background: gray;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
@@ -29,16 +33,26 @@
             text-align: right;
             color: red;
         }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas <strong>grandes</strong></h1>
 
     <table> 
+        <caption>Dados sobre alguns estados</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -57,7 +71,7 @@
         </tr>
         <tfoot>
             <tr>
-                <th>Toral de Habitantes</th>
+                <th >Toral de Habitantes</th>
                 <td class="num"><strong>100000</strong></td>
             </tr>
         </tfoot>
