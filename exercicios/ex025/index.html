@@ -13,9 +13,17 @@
 <body>
     <h1>Formulários</h1>
     <h2>vou criar o primeiro fomrs aqui<h2>
-        <form>
-            <p>nome: <input type="text" name="nome" id="nome"></p>
-            <p>sobrenome <input type="text" name="sobrenome" id="sobrenome"></p>
+        <form action="cadastro.php" autocomplete="off">
+            <p><label for="inome">nome: </label>
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="isobrenome">sobrenome: </label><input type="text" name="sobrenome" id="isobrenome"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+
+        <h2>outro forms</h2>
+        <form action="cadastro.php" method="post">
+            <p><label for="inome2">Nome:</label> <input type="text" name="nome" id="inome2"></p>
+            <p><label for="isobren">sobrenome: </label><input type="text" name="sobrenome" id="isobren"></p>
             <p><input type="submit" value="Enviar"></p>
         </form>
 </body>
