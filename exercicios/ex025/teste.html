@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: peachpuff;
+        }
+
+        main {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.479);
+        }
+
+        p.nome1{
+            margin-bottom: 10px;
+        }
+
+        p.senha1 {
+            margin-bottom: 10px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        div > input {
+            padding: 10px;
+            margin-left: 8px;
+            margin-right: 8px;
+            margin-top: 8px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 15px;
+            
+        }
+
+        section:hover {
+            box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.418);
+            scale: 110%;
+            transition: box-shadow 0.5s, scale 0.4s;
+        }
+
+        div > input:hover {
+            scale: 110%;
+            transition: scale 0.3s;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.274);
+            color: white;
+            background-color: black;
+            border-radius: 15px;
+            
+
+        }
+    
+    </style>
+
+</head>
+<body>
+    <main>
+        <section>
+            <form autocomplete="on" action="cadastro.php" method="post">
+                <p class="nome1">
+                    <label for="iname">nome:</label>
+                    <input type="text" name="nome" id="iname" autocomplete="username" maxlength="8" size="10" placeholder="nome d user">
+                </p>
+
+                <p class="senha1">
+                    <label for="isenha">senha:</label>
+                    <input type="password" name="senha" id="isenha" autocomplete="current-password" maxlength="12" size="12">
+                </p>
+
+                <div>
+                    <input type="submit" value="entrar">
+                    <input type="reset" value="apagar">
+                </div>
+        
+            </form>
+        </section>
+    </main>
+</body>
+</html>
