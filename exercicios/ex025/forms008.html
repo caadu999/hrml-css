@@ -10,10 +10,32 @@
         mais forms
     </h1>
 
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <p>
-            <label for="inome">nome</label>
-            <input type="text" name="nome" id="inome">
+            <label for="in1">numero 1</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">numero 2</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" >
+        </p>
+
+
+        <p>
+            <label for="isoma">soma</label>
+            <output id="isoma" name="soma">0</output>
+        </p>
+
+        <p>
+            <label for="iran">numero:</label>
+            <input type="range" name="ran" id="iran" max="5" min="1" oninput="inum.innerHTML = Number(iran.value)">
+            <output id="inum">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </p>
     </form>
 </body>
