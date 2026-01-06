@@ -20,13 +20,27 @@ header > h1 {
     text-align: center;
 }
 
+span#menub {
+    background-color: rgb(53, 53, 53);
+    display: block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+span#menub:hover {
+    background-color: white;
+    color: black;
+}
+
 body {
     background-color: lightgray;
 
 }
 
 menu {
-    display: block;
+    display: none;
 }
 
 menu > ul {
